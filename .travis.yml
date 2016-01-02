@@ -10,3 +10,5 @@ script:
   - ./node_modules/mocha/bin/mocha
 
 
+after_success:
+  "$DOCKER_HUB_TRIGGER"
