@@ -10,4 +10,4 @@ script:
   - ./node_modules/mocha/bin/mocha
 
 after_success:
-  "curl -H \"Content-Type: application/json" --data '{\"build\": true}' -X POST $DOCKER_HUB_URL"
+  "curl -X POST $DOCKER_HUB_URL"
