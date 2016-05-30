@@ -1,6 +1,6 @@
 html
   head
-    title='The simples possible node webapp'
+    title='The simplest possible node webapp'
     link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
   body
     div.container
@@ -10,3 +10,4 @@ html
         p
           a.btn.btn-primary(href="http://daraff.ch") Homepage
         p
+        div #{process.env.DOCKERCLOUD_NODE_HOSTNAME}
